@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "animationtesting_ground",
+			"path": "."
+		}
+	],
+	"settings": {
+		"CodeGPT.apiKey": "Ollama",
+		"liveServer.settings.multiRootWorkspaceName": "animationtesting_ground"
+	}
+}

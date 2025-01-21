@@ -1,0 +1,43 @@
+.yasya-image-container {
+    position: absolute;
+    top: 7%;
+    left: 0;  /* Adjust according to your images */
+    width: 100vh;  /* Adjust according to your images */
+    height: 100vh; /* Adjust according to your images */
+
+}
+
+.yasya-image-container img {
+    position: absolute;
+    top:10%;
+    object-fit: contain;
+    transform-origin: bottom center;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+.bw-halftone {
+    z-index: 3;  /* Topmost image */
+    opacity: 0.34;
+    mix-blend-mode: plus-lighter;
+}
+
+.woman-ori {
+    z-index: 2;  /* Middle image */
+}
+
+.rbg-halftone {
+    z-index: 1;  /* Bottom image */
+    mix-blend-mode: overlay;
+}
+
+.yasya-image-container:hover .bw-halftone {
+    transform: scale(1.2), translate(10px,10px);  /* Scale up the topmost image */
+}
+
+.yasya-image-container:hover .woman-ori {
+    transform: scale(1.2) translate(10px,20px);  /* Scale up the second image */
+}
+
+.yasya-image-container:hover .rbg-halftone {
+    transform: scale(1.2);  /* Scale up the bottommost image */
+}

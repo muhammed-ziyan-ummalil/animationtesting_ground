@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="./index.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Changeling Neo:wght@400&display=swap" />
+</head>
+<body>
+  	
+  	<div class="property-1default">
+    		<img class="yukthi-logo-icon" alt="" src="assets/Yukthi Logo.svg">
+    		
+    		<img class="blue-icon" alt="" src="assets/blue.svg">
+    		
+    		<img class="yasya-logo-icon" alt="" src="assets/Yasya LOGo.svg">
+    		
+    		<img class="yin-yang-icon" alt="" src="assets/yin yang.png">
+    		
+    		<div class="subjecy">
+      			<img class="yasya-rbg-halftone" alt="" src="assets/yasya rbg halftone.png">
+      			
+      			<img class="yasys-woman-ori" alt="" src="assets/yasys woman ori.png">
+      			
+      			<img class="yasya-bw-halftone" alt="" src="assets/yasya bw halftone.png">
+      			
+    		</div>
+    		<img class="property-1default-child" alt="" src="assets/Frame 13941.png">
+    		
+    		<div class="yukthi-robot">
+      			<img class="yukthi-rgb-halfltone" alt="" src="assets/yukthi rgb halfltone.png">
+      			
+      			<img class="yukthi-robot-child" alt="" src="assets/Vector 458.svg">
+      			
+      			<img class="yukthi-robot-icon" alt="" src="assets/yukthi robot.png">
+      			
+      			<img class="yukthi-bw-halfton" alt="" src="assets/Yukthi bw halfton.png">
+      			
+    		</div>
+    		<img class="elements-right-icon" alt="" src="assets/eLEMENTS RIGHT.svg">
+    		
+    		<img class="elements-left-icon" alt="" src="assets/eLEMENTS LEFT.svg">
+    		
+    		<div class="yasya-25">YASYA ‘25</div>
+    		<div class="yukthi-25">YUKTHI ‘25</div>
+    		<div class="college-name">
+      			<div class="st-thomas-institute">ST. THOMAS INSTITUTE FOR SCIENCE & TECHNOLoGY</div>
+      			<div class="presents">PRESENTS</div>
+    		</div>
+    		<img class="elements-right-icon1" alt="" src="assets/eLEMENTS RIGHT.svg">   		
+  	</div>	
+</body>
+</html>
