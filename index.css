@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+.curvy{
+    animation-duration:700ms;
+    animation-name: curyvscaling;
+    animation-delay: 1s;
+}
+.curvy:hover{
+    animation-play
+}
+ @keyframes curyvscaling{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(5);
+    }
+ }
