@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .yasya-image-container {
     position: relative;
     top: 7%;
