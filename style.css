@@ -1,7 +1,63 @@
 body{
+    background-color: white;
     margin: 0;
+    overflow-x: hidden;
 }
 
+.header_content {
+    position: absolute;
+    left: 50%;
+    top: 5%; /* Adjust as needed for vertical placement */
+    transform: translateX(-50%); /* Centers the container horizontally */
+    text-align: center;
+    z-index: 5;
+    color: rgb(255, 255, 255);
+    font-family: 'Changeling Neo';
+    mix-blend-mode: difference;
+}
+
+.stist-con {
+    font-size: 23.21px;
+    font-weight: lighter;
+    margin-bottom: 10px; /* Adds spacing below this text */
+    mix-blend-mode: difference;
+}
+
+.presents {
+    font-size: 18px; /* Adjust font size if needed */
+    font-weight: lighter;
+    mix-blend-mode: difference;
+}
+
+
+/*
+.header_content
+{
+    position: absolute;
+    left: 50%;
+    width: fit-content;
+    z-index: 5;
+}
+
+.stist-con{
+    font-size: 23.21px;
+    font-family: 'Changeling Neo';
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    mix-blend-mode: difference;
+}
+
+.presents
+{
+    font-family: 'Changeling Neo';
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    top: 30px;
+}
+*/
 .yasya-image-container {
     position: relative;
     top: 7%;
@@ -20,6 +76,8 @@ body{
 .yasya-image-container .blue-svg-expanding{
     top: 0px;
     left: 0px;
+    transform-origin: center center; /* Centers the scaling within the container */
+    transition: transform 1.5s ease-in-out;
 }
 .yinyang {
     position: absolute;
@@ -67,7 +125,7 @@ body{
 }
 
 .yasya-image-container:hover .blue-svg-expanding {
-    transform: scale(2 );
+    transform: scale(2);
     transform-origin: left;
 }
 
@@ -78,7 +136,7 @@ body{
 
 .yasya-image-container:hover .yinyang {
     animation: rotate 1.5s linear;
-    transform-origin: center;
+    transform-origin: center center;
     animation-fill-mode: forwards;
 }
 
