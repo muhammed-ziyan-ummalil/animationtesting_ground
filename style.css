@@ -1,14 +1,14 @@
-body{
+body {
     background-color: white;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .header_content {
     position: absolute;
     left: 50%;
-    top: 5%; /* Adjust as needed for vertical placement */
-    transform: translateX(-50%); /* Centers the container horizontally */
+    top: 5%;
+    transform: translateX(-50%);
     text-align: center;
     z-index: 5;
     color: rgb(255, 255, 255);
@@ -19,51 +19,21 @@ body{
 .stist-con {
     font-size: 23.21px;
     font-weight: lighter;
-    margin-bottom: 10px; /* Adds spacing below this text */
+    margin-bottom: 10px;
     mix-blend-mode: difference;
 }
 
 .presents {
-    font-size: 18px; /* Adjust font size if needed */
+    font-size: 18px;
     font-weight: lighter;
     mix-blend-mode: difference;
 }
 
-
-/*
-.header_content
-{
-    position: absolute;
-    left: 50%;
-    width: fit-content;
-    z-index: 5;
-}
-
-.stist-con{
-    font-size: 23.21px;
-    font-family: 'Changeling Neo';
-    font-weight: lighter;
-    color: white;
-    text-align: center;
-    display: inline-block;
-    mix-blend-mode: difference;
-}
-
-.presents
-{
-    font-family: 'Changeling Neo';
-    font-weight: lighter;
-    text-align: center;
-    color: white;
-    top: 30px;
-}
-*/
 .yasya-image-container {
     position: relative;
-    top: 7%;
-    left: 0;
-    width: 100vh;
-    height: 100vh;
+    width: 100vw; /* Match the width of the screen */
+    height: 100vh; /* Match the height of the screen */
+    overflow: hidden; /* Constrain all animations inside this container */
 }
 
 .yasya-image-container img {
@@ -73,19 +43,21 @@ body{
     transform-origin: bottom center;
     transition: transform 1.5s ease-in-out;
 }
-.yasya-image-container .blue-svg-expanding{
-    top: 0px;
-    left: 0px;
-    transform-origin: center center; /* Centers the scaling within the container */
+
+.yasya-image-container .blue-svg-expanding {
+    top: 0;
+    left: 0;
+    transform-origin: center center;
     transition: transform 1.5s ease-in-out;
 }
+
 .yinyang {
     position: absolute;
-    z-index: 1;  /* Changed to 0 to place it behind all other images */
-    top: 50%;    /* Changed to position it in the middle */
-    left: 50%;
-    transform:rotate(-90deg) translate(-75%, -15%) scale(1.2);
-    width: 500px; /* Added explicit width for better control */
+    z-index: 1;
+    top: 0;
+    left: 25%;
+    transform: rotate(-90deg) translate(-75%, -15%) scale(1.2);
+    width: 500px;
     height: auto;
     transform-origin: center;
 }
@@ -126,12 +98,7 @@ body{
 
 .yasya-image-container:hover .blue-svg-expanding {
     transform: scale(2);
-    transform-origin: left;
-}
-
-.yasya-image-container:not(hover) .blue-svg-expanding {
-    transform: scale(1);
-    transform-origin: left;
+    transform-origin: center;
 }
 
 .yasya-image-container:hover .yinyang {
@@ -147,11 +114,11 @@ body{
 }
 
 .yasya-image-container:hover .bw-halftone {
-    transform: scale(1.2) translate(10px,10px);
+    transform: scale(1.2) translate(10px, 10px);
 }
 
 .yasya-image-container:hover .woman-ori {
-    transform: scale(1.2) translate(10px,20px);
+    transform: scale(1.2) translate(10px, 20px);
 }
 
 .yasya-image-container:hover .rbg-halftone {
