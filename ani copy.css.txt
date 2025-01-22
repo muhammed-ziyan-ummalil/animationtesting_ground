@@ -1,0 +1,94 @@
+.yasya-image-container {
+    position: relative;
+    top: 7%;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+}
+
+.yasya-image-container img {
+    position: absolute;
+    top: 20%;
+    object-fit: contain;
+    transform-origin: bottom center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.yasya-image-container .blue-background{
+    position: fixed;
+    z-index: 0;
+    top: 0px;
+    left: 200px; 
+    transform: translate(10, 50);
+    width: 100%;
+    height: 100%;
+}
+
+.yinyang {
+    position: absolute;
+    z-index: 1;  /* Changed to 0 to place it behind all other images */
+    top: 50%;    /* Changed to position it in the middle */
+    left: 50%;
+    transform: translate(-75%, -15%) scale(1.2);
+    width: 500px; /* Added explicit width for better control */
+    height: auto;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-70%, -20%) rotate(0deg) scale(1.2);
+    }
+    100% {
+        transform: translate(-70%, -20%) rotate(180deg) scale(1.7);
+    }
+}
+
+@keyframes revrotate {
+    0% {
+        transform: translate(-70%, -20%) rotate(180deg) scale(1.7);
+    }
+    100% {
+        transform: translate(-70%, -20%) rotate(0deg) scale(1.2);
+    }
+}
+
+.bw-halftone {
+    z-index: 4;
+    opacity: 0.34;
+    mix-blend-mode: plus-lighter;
+}
+
+.woman-ori {
+    z-index: 3;
+}
+
+.rbg-halftone {
+    z-index: 2;
+    opacity: 0.7;
+    mix-blend-mode: color-burn;
+}
+
+.yasya-image-container:hover .yinyang {
+    animation: rotate 0.5s ease;
+    transform-origin: center;
+    animation-fill-mode: forwards;
+}
+
+.yasya-image-container:not(hover) .yinyang {
+    animation: revrotate 0.5s ease;
+    transform-origin: center;
+    animation-fill-mode: forwards;
+}
+
+.yasya-image-container:hover .bw-halftone {
+    transform: scale(1.2) translate(10px,10px);
+}
+
+.yasya-image-container:hover .woman-ori {
+    transform: scale(1.2) translate(10px,20px);
+}
+
+.yasya-image-container:hover .rbg-halftone {
+    transform: scale(1.2);
+}
