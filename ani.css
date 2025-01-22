@@ -67,6 +67,11 @@
     transform-origin: left;
 }
 
+.yasya-image-container:not(hover) .blue-svg-expanding {
+    transform: scale(1);
+    transform-origin: left;
+}
+
 .yasya-image-container:hover .yinyang {
     animation: rotate 1.5s linear;
     transform-origin: center;
